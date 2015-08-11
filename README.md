@@ -15,7 +15,7 @@ import (
 func main() {
 	p, _ := tomita.New("/home/user/tomita-parser", "/home/user/config.proto")
 	p.SetDebug(true)
-	output, err := tomita.Run("This is text to parse")
+	output, err := p.Run("This is text to parse")
 	if err != nil {
 		...	
 	}
